@@ -42,7 +42,7 @@ def S(n): # requires n to be of form gmpy2.mpz(x) where x is an integer
         return S(n)
 
 
-
-m = gmpy2.mpz(int(input("choosen your input number:")))
-SOE(gmpy2.mpz(2)*m)
-print(S(m))
+#the following is for test purposes:
+#m = gmpy2.mpz(int(input("choosen your input number:")))
+#SOE(gmpy2.mpz(2)*m)
+#print(S(m))
