@@ -33,7 +33,7 @@ def S(n): # requires n to be of form gmpy2.mpz(x) where x is an integer
                     productoffactors *= power
         if sumoffactors == 1:
             sumoffactors = 0
-        return sumoffactors- n
+        return gmpy2.mpz(sumoffactors- n)
        
             
     else:
@@ -43,6 +43,6 @@ def S(n): # requires n to be of form gmpy2.mpz(x) where x is an integer
 
 
 #the following is for test purposes:
-#m = gmpy2.mpz(int(input("choosen your input number:")))
-#SOE(gmpy2.mpz(2)*m)
-#print(S(m))
+m = gmpy2.mpz(int(input("choosen your input number:")))
+SOE(gmpy2.mpz(2)*m)
+print(S(m))
