@@ -29,7 +29,7 @@ def S(n): # requires n to be of form gmpy2.mpz(x) where x is an integer
                     power = p
                     while power <= n and int(gmpy2.f_mod(n, power*p)) == 0:
                             power *= p   
-                    sumoffactors *= (power*p - gmpy2.mpz(1))/ (power - gmpy2.mpz(1))
+                    sumoffactors *= (power*p - gmpy2.mpz(1))/ (p - gmpy2.mpz(1))
                     productoffactors *= power
         if sumoffactors == 1:
             sumoffactors = 0
@@ -43,7 +43,6 @@ def S(n): # requires n to be of form gmpy2.mpz(x) where x is an integer
 
 
 
-
-SOE(11000)
-print(S(7))
-print(S(4))
+m = gmpy2.mpz(int(input("choosen your input number:")))
+SOE(gmpy2.mpz(2)*m)
+print(S(m))
