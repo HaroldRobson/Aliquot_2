@@ -18,11 +18,12 @@ def preimage(n, L):
         return preImageArray
     else:
         n = gmpy2.mpz(n)
-        return preimage(n)
+        return preimage(n, L)
 
-def preImageSizes(m, L)# computes the preimages for integers up to m, with the Limit for checking being L
-preImageSizeArray= []
-for j in range(m):
-    print(j)# this function is very slow so i left this print(j) in for peace of mind that it is in fact working
-    preImageSizeArray.append(len(preimage(j, L)))
-
+def preImageSizes(m, L):# computes the preimages for integers up to m, with the Limit for checking being L
+    preImageSizeArray= []
+    for j in range(m):
+        print(j)# this function is very slow so i left this print(j) in for peace of mind that it is in fact working
+        preImageSizeArray.append(len(preimage(j, L)))
+    return preImageSizeArray
+#print(preImageSizes(50, 1000))
