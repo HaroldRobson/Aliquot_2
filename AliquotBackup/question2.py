@@ -16,4 +16,3 @@ def A(k):
             k = int(S(k))
             sequence.append(k)
     return sequence
-print(A(2500))
