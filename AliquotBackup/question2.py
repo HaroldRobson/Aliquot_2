@@ -13,7 +13,7 @@ def A(k):
             sequence.append(k)
             break
         else:
-            k = S(k)
+            k = int(S(k))
             sequence.append(k)
     return sequence
 print(A(2500))
